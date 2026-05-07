@@ -12,15 +12,16 @@ import type { NextPage } from 'next';
 const HomePage: NextPage = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <ProcessBlueprint />
-      <Clip />
-      <CapabilitiesSection />
-      <RatingCard />
-      <Cta />
-      <Footer />
-      {/* Yahan aap aage ke sections add kar sakte hain */}
+      <main className='overflow-x-hidden w-full'>
+        <Navbar />
+        <Hero />
+        <ProcessBlueprint />
+        <Clip />
+        <CapabilitiesSection />
+        <RatingCard />
+        <Cta />
+        <Footer />
+      </main>
     </>
   );
 }

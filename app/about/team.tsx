@@ -6,21 +6,21 @@ const teamMembers = [
     role: "Managing Director, Business Growth & Strategy",
     desc: "Divakar leads business growth, partnerships, and strategic direction at CustomTech Labs. He brings a rare combination of business acumen and technical understanding, allowing him to see both the opportunity and the execution behind it. He works closely with clients to identify what's actually holding their business back and translates that into clear, scalable technology solutions.",
     additionalInfo: "His strength lies in connecting the dots between business goals, user needs, and technical possibilities. From client acquisition to long-term partnerships, Divakar ensures every engagement is rooted in impact, not just delivery.",
-    image: "/path-to-divakar-image.jpg" // replace with real path
+    image: "./divaker.png" // replace with real path
   },
   {
     name: "Harvindra Singh",
     role: "Managing Director & CTO, Technology & Engineering",
     desc: "Harvindra leads the engineering vision at CustomTech Labs, ensuring every product is built with precision, scalability, and long-term performance in mind. With deep expertise in system architecture and modern technologies, he turns complex business requirements into robust, high-performing solutions.",
     additionalInfo: "He takes a hands-on approach to development, guiding teams through clean architecture, efficient processes, and enterprise-grade execution. His focus is simple: build technology that not only works today, but continues to perform as the business grows.",
-    image: "/path-to-harvindra-image.jpg"
+    image: "./har.png"
   },
   {
     name: "Prati Kaufman",
     role: "Human-Centered Systems Architect",
     desc: "Prati Kaufman leads strategy, user experience, and growth alignment at CustomTech Labs. With a strong foundation in marketing, business growth, and human behavior, she ensures that every product is not just built well but built right.",
     additionalInfo: "Her approach starts before the first line of code. She focuses on defining the why behind every build—who it is for, how it will be used, and how it will drive real business outcomes. At her core, Prati believes that technology should simplify decisions, not complicate them.",
-    image: "/path-to-prati-image.jpg"
+    image: "./hara.png"
   }
 ];
 
