@@ -1,6 +1,5 @@
 import { IoIosWarning } from "react-icons/io";
 
-// 1. Interface (Sahi hai)
 interface CardProps {
     id: string;
     step: number | string;
@@ -9,7 +8,6 @@ interface CardProps {
     position: 'left' | 'right';
 }
 
-// 2. Component (Export default hata diya, ise internal rakha hai)
 const ProcessCard = ({ id, step, title, text, position }: CardProps) => (
     <div id={id} className={`col-span-1 flex flex-col ${position === 'left' ? 'md:items-end' : 'md:items-start'} mb-10`}>
         <p className="text-[10px] uppercase font-bold text-gray-400 mb-1">Step {step}:</p>
@@ -20,7 +18,6 @@ const ProcessCard = ({ id, step, title, text, position }: CardProps) => (
     </div>
 );
 
-// 3. Main Page Component
 export default function Einfo() {
     return (
         <main className="min-h-screen p-4 md:p-10 bg-gray-50"> 
@@ -49,15 +46,13 @@ export default function Einfo() {
 
             <div className="space-y-4 mt-10 p-6 bg-white rounded-xl shadow-sm">
                 <p className="font-bold text-lg">If you are:</p>
-                
                 <div className="space-y-3">
                     <p className="flex items-center gap-2"><IoIosWarning className="text-yellow-500 flex-shrink-0" /> Managing inventory in multiple places</p>
                     <p className="flex items-center gap-2"><IoIosWarning className="text-yellow-500 flex-shrink-0" /> Waiting on updates to go live</p>
                     <p className="flex items-center gap-2"><IoIosWarning className="text-yellow-500 flex-shrink-0" /> Jumping between tools to track orders and customers</p>
                 </div>
-
                 <p className="text-gray-500 mt-4 italic">That’s not a system. That’s friction.</p>
             </div>
         </main>
-    )
+    );
 }
