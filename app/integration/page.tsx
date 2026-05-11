@@ -8,7 +8,7 @@ import Art from "../webdevser/art"
 import Cursol from "../webdevser/cursol"
 import Boxes from "../webdevser/boxes"
 import Footer from "../components/Footer"  
-import Fb from "./fb"
+import Strong from "./strong"
 
 export default function Integration() {
     return (
@@ -22,7 +22,8 @@ export default function Integration() {
             <Art title="Case Studies"/>
             <Cursol/>
             <Boxes/>
-            <Fb />
+            <Hori />
+            <Strong />
             <Footer/>
         </>
     )

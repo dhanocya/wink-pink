@@ -45,29 +45,31 @@ export default function Ints() {
                         <div>
                             {/* Bold Text */}
                             <p className="text-[15px] font-bold text-black mb-6 leading-relaxed">
-                                Well-structured custom website development restores control.
+                                Your systems should talk to each other.
                             </p>
 
                             {/* Italic Light Text */}
                             <p className="text-[15px] italic text-gray-500 mb-8 leading-relaxed">
-                                We build custom websites that integrate your tools, simplify workflows and give your team structured control.
+                                If they don’t, your team fills the gaps manually.
                             </p>
 
                             {/* Bullet Points with Red X */}
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
                                     <span className="text-red-600 font-bold text-lg">✖</span>
-                                    <span className="text-gray-500 font-semibold text-sm">No bottlenecks.</span>
+                                    <span className="text-gray-500 font-semibold text-sm">Copying orders between platforms.</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-red-600 font-bold text-lg">✖</span>
-                                    <span className="text-gray-500 font-semibold text-sm">No fragmented systems.</span>
+                                    <span className="text-gray-500 font-semibold text-sm">Checking inventory across tools.</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-red-600 font-bold text-lg">✖</span>
-                                    <span className="text-gray-500 font-semibold text-sm">No fragile builds that break under growth.</span>
+                                    <span className="text-gray-500 font-semibold text-sm">Pulling reports from multiple sources.</span>
                                 </li>
                             </ul>
+
+                            <p>That’s not a workflow- it’s friction.</p>
                         </div>
 
                         <div>
@@ -79,15 +81,15 @@ export default function Ints() {
                             {/* Bullet Points with Red X */}
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
-                                    <span className="text-red-600 font-bold text-lg">✖</span>
+                                    <FaCheckCircle className="text-[#EFFF00] text-4xl mx-4 " />
                                     <span className="text-gray-500 font-semibold text-sm">No bottlenecks.</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <span className="text-red-600 font-bold text-lg">✖</span>
+                                    <FaCheckCircle className="text-[#EFFF00] text-4xl mx-4 " />
                                     <span className="text-gray-500 font-semibold text-sm">No fragmented systems.</span>
                                 </li>
                                 <li className="flex items-center gap-3">
-                                    <span className="text-red-600 font-bold text-lg">✖</span>
+                                    <FaCheckCircle className="text-[#EFFF00] text-4xl mx-4 " />
                                     <span className="text-gray-500 font-semibold text-sm">No fragile builds that break under growth.</span>
                                 </li>
                             </ul>
@@ -97,16 +99,16 @@ export default function Ints() {
                             </p>
                         </div>
 
-                        {/* Action Buttons */}
-                        <div className="flex flex-wrap gap-4">
-                            <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
-                                View Our Portfolio <span>→</span>
-                            </button>
-                            <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
-                                Work With Us <span>→</span>
-                            </button>
-                        </div>
+                    </div>
 
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-4">
+                        <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
+                            View Our Portfolio <span>→</span>
+                        </button>
+                        <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
+                            Work With Us <span>→</span>
+                        </button>
                     </div>
                 </div>
 
