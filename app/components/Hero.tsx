@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function Hero() {
+export default function Hero({bgImage} : {bgImage : string}) {
   return (
     <main className="relative w-full min-h-[90vh] bg-[#f4f4f4] overflow-hidden">
 
@@ -9,7 +9,8 @@ export default function Hero() {
       {/* Note: Apni hero background image (w/ people) ko public folder me rakhein aur yahan path change karein */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-right md:bg-center"
-        style={{ backgroundImage: "url('hero.jpg')" }}
+        // Dynamic URL yahan add hogi
+        style={{ backgroundImage: `url('${bgImage}')` }}
       >
       </div>
 

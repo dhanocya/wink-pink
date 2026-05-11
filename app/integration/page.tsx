@@ -1,24 +1,29 @@
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
-import Line from "../components/Line"
-import Tssystem from "../webdevser/tssystem"
+import Hori from "../components/Hori"
+import Ints from "./ints"
 import Foryou from "./foryou"
-import Ourapp from "./ourapp"
-// import Clip from "../webdevser/clip"
-// import CapabilitiesSection from "../components/Capabilitieas"
-// import RatingCard from "../components/RatingCard"
-// import Cta from "../components/Cta"
-// import Footer from "../components/Footer"
+import Square from "../solution/square"
+import Art from "../webdevser/art"
+import Cursol from "../webdevser/cursol"
+import Boxes from "../webdevser/boxes"
+import Footer from "../components/Footer"  
+import Fb from "./fb"
 
 export default function Integration() {
     return (
         <>
             <Navbar />
-            <Hero />
-            <Line />
-            <Tssystem/>
+            <Hero bgImage="/inte.png"/>
+            <Hori />
+            <Ints />
             <Foryou />
-            <Ourapp/>
+            <Square/>
+            <Art title="Case Studies"/>
+            <Cursol/>
+            <Boxes/>
+            <Fb />
+            <Footer/>
         </>
     )
 }

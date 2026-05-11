@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Einfo from './einfo';
+import Square from './square';
 
 export default function Solution() {
     return (
@@ -49,6 +50,7 @@ export default function Solution() {
             <div className='h-[20] bg-yellow-500'></div>
 
             <Einfo />
+            <Square/>
         </>
     );
 }

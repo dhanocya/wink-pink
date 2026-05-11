@@ -6,7 +6,7 @@ import Clip from './webdevser/clip';
 import RatingCard from './components/RatingCard';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
-
+import Line from './components/Line';
 import type { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
@@ -14,7 +14,8 @@ const HomePage: NextPage = () => {
     <>
       <main className='overflow-x-hidden w-full'>
         <Navbar />
-        <Hero />
+        <Hero bgImage='/hero.jpg'/>
+        <Line/>
         <ProcessBlueprint />
         <Clip />
         <CapabilitiesSection />
