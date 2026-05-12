@@ -32,29 +32,29 @@ const Card: React.FC<CardProps> = ({ icon, text, bgColor, borderColor }) => {
 export default function ForYou() {
   return (
     <section className="w-full px-4 py-12 md:py-20 bg-white overflow-x-hidden">
-      
+
       {/* Header Section */}
-      <div className="max-w-4xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold inline-block px-6 py-2 bg-black text-white rounded-lg">
+      <div className="mx-auto text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold px-6 py-2 bg-black text-white">
           For Your Customers
         </h2>
         <p className="mt-6 text-gray-600 text-lg md:text-xl">
-          Customers only see the front end. <br className="hidden md:block" /> 
+          Customers only see the front end. <br className="hidden md:block" />
           But their experience depends on everything behind it.
         </p>
       </div>
 
       {/* Main Content Grid */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
-        
+
         {/* Image Area */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-full max-w-[450px]">
-            <Image 
-              src="/ana.png" 
-              alt="System Integration Illustration" 
-              width={500} 
-              height={500} 
+            <Image
+              src="/ana.png"
+              alt="System Integration Illustration"
+              width={500}
+              height={500}
               priority
               className="w-full h-auto object-contain"
             />
@@ -63,64 +63,63 @@ export default function ForYou() {
 
         {/* Content Side */}
         <div className="w-full md:w-1/2 space-y-10">
-          
+
           {/* Negative States (Red) */}
           <div className="space-y-4">
-            <p className="font-bold text-red-600 flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span>
+            <p className="font-bold text-[#979797] flex items-center gap-2">
               When systems aren’t connected, things break:
             </p>
             <div className="grid gap-3">
-              <Card 
-                icon={<GoDotFill className="text-red-500" />} 
-                text="Conversion-focused architecture that turns attention into inquiries." 
-                bgColor="bg-[#fff6f6]" 
-                borderColor="border-[#fee6e5]" 
+              <Card
+                icon={<GoDotFill className="text-red-500" />}
+                text="Conversion-focused architecture that turns attention into inquiries."
+                bgColor="bg-[#fff6f6]"
+                borderColor="border-[#fee6e5]"
               />
-              <Card 
-                icon={<GoDotFill className="text-red-500" />} 
-                text="Integrated systems that reduce internal friction." 
-                bgColor="bg-[#fff6f6]" 
-                borderColor="border-[#fee6e5]" 
+              <Card
+                icon={<GoDotFill className="text-red-500" />}
+                text="Integrated systems that reduce internal friction."
+                bgColor="bg-[#fff6f6]"
+                borderColor="border-[#fee6e5]"
               />
-              <Card 
-                icon={<GoDotFill className="text-red-500" />} 
-                text="Client portals that strengthen retention and loyalty." 
-                bgColor="bg-[#fff6f6]" 
-                borderColor="border-[#fee6e5]" 
+              <Card
+                icon={<GoDotFill className="text-red-500" />}
+                text="Client portals that strengthen retention and loyalty."
+                bgColor="bg-[#fff6f6]"
+                borderColor="border-[#fee6e5]"
               />
             </div>
           </div>
 
           {/* Positive States (Green/Yellow) */}
           <div className="space-y-4">
-            <p className="font-bold text-green-700 flex items-center gap-2">
-               <span className="w-2 h-2 bg-green-600 rounded-full"></span>
-               With the right system integration, everything stays aligned:
+            <p className="font-bold text-[#979797] flex items-center gap-2">
+
+              With the right system integration, everything stays aligned:
             </p>
             <div className="grid gap-3">
-              <Card 
-                icon={<MdSecurity className="text-green-600" />} 
-                text="Secure architecture that builds long-term customer trust." 
-                bgColor="bg-[#fcfdec]" 
-                borderColor="border-[#F7FBCE]" 
+              <Card
+                icon={<MdSecurity className="text-green-600" />}
+                text="Secure architecture that builds long-term customer trust."
+                bgColor="bg-[#fcfdec]"
+                borderColor="border-[#F7FBCE]"
               />
-              <Card 
-                icon={<AiFillThunderbolt className="text-yellow-500" />} 
-                text="Lightning-fast systems that improve user engagement." 
-                bgColor="bg-[#fcfdec]" 
-                borderColor="border-[#F7FBCE]" 
+              <Card
+                icon={<AiFillThunderbolt className="text-yellow-500" />}
+                text="Lightning-fast systems that improve user engagement."
+                bgColor="bg-[#fcfdec]"
+                borderColor="border-[#F7FBCE]"
               />
-              <Card 
-                icon={<FaRegClock className="text-green-600" />} 
-                text="Real-time data syncing for a seamless user experience." 
-                bgColor="bg-[#fcfdec]" 
-                borderColor="border-[#F7FBCE]" 
+              <Card
+                icon={<FaRegClock className="text-green-600" />}
+                text="Real-time data syncing for a seamless user experience."
+                bgColor="bg-[#fcfdec]"
+                borderColor="border-[#F7FBCE]"
               />
             </div>
           </div>
 
-          <p className="italic text-gray-500 text-center md:text-left border-l-4 border-[#EFFF00] pl-4">
+          <p className="italic text-gray-500 text-center md: pl-4">
             "The result? An experience your customers can trust — every time."
           </p>
         </div>
@@ -128,11 +127,11 @@ export default function ForYou() {
 
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-16 px-4">
-        <button className="w-full sm:w-64 bg-[#EFFF00] hover:bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg">
-          View Our Portfolio
+        <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
+          View Our Portfolio <span>→</span>
         </button>
-        <button className="w-full sm:w-64 bg-black text-white hover:bg-gray-900 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg">
-          Work with us
+        <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-5 py-2.5 rounded text-xs font-bold transition flex items-center gap-2">
+          Work With Us <span>→</span>
         </button>
       </div>
     </section>

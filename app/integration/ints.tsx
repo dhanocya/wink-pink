@@ -26,7 +26,7 @@ export default function Ints() {
                 <div className="grid grid-cols-1 lg:grid-cols-1 gap-10 lg:gap-16 items-start">
 
                     {/* Left Column: Image */}
-                    <div className="relative w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <div className="relative w-130 aspect-[4/2] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                         {/* Image Placeholder - Replace src with your actual image path */}
                         <Image
                             src="/team.png"
@@ -40,7 +40,7 @@ export default function Ints() {
                     </div>
 
                     {/* Right Column: Content */}
-                    <div className="flex">
+                    <div className="flex justify-between">
 
                         <div>
                             {/* Bold Text */}
