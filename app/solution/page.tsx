@@ -1,12 +1,16 @@
-import React from 'react';
-import Image from 'next/image';
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar"
 import Einfo from './einfo';
 import Square from './square';
+import Hori from "../components/Hori"
+import Cursol from "../webdevser/cursol"
+import Boxes from "../webdevser/boxes"
+import Footer from "../components/Footer"
+import Strong from "../integration/strong"
 
 export default function Solution() {
     return (
         <>
+            <Navbar />
             <main className="relative w-full min-h-[90vh] bg-[#f4f4f4]">
                 <Navbar />
                 {/* 1. Background Image Setup */}
@@ -48,9 +52,14 @@ export default function Solution() {
             </main>
 
             <div className='h-[20] bg-yellow-500'></div>
-
             <Einfo />
-            <Square/>
+            <Square />
+            <Cursol title="Industries We Transform" />
+            <Boxes />
+            <Hori />
+            <Strong />
+            <Footer />
+
         </>
-    );
+    )
 }

@@ -6,7 +6,6 @@ import CustomerSide from "../webdevser/customerside";
 import Philosophy from "../webdevser/philosophy";
 import Fea from "../webdevser/fea";
 import Ibox from "../webdevser/ibox";
-import Art from "../webdevser/art";
 import Cursol from "../webdevser/cursol"
 import Footer from "../components/Footer";
 import Boxes from "../webdevser/boxes";
@@ -21,8 +20,7 @@ export default function AppDev() {
       <Tssystem />
       <CustomerSide />
       <Philosophy />
-      <Art title="Case Studies"/>
-      <Cursol />
+      <Cursol title="Case Studies"/>
       <Boxes />
       <Fea />
       <Ibox />

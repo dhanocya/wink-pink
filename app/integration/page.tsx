@@ -19,8 +19,7 @@ export default function Integration() {
             <Ints />
             <Foryou />
             <Square/>
-            <Art title="Case Studies"/>
-            <Cursol/>
+            <Cursol title="Industries We Transform" />
             <Boxes/>
             <Hori />
             <Strong />

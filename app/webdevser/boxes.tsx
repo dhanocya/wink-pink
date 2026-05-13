@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function Boxes() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-8">
-            <div>
-                <p className="text-3xl font-bold bg-yellow-400">Sectors We Build For</p>
+            <div className="bg-black w-200 p-4 m-4">
+                <p className="text-3xl font-bold text-white text-center">Sectors We Build For</p>
             </div>
 
-            <div>
-                <p> <span className="font-bold">Different industries. Same friction. Same fix.</span>
+            <div className="w-200">
+                <p className="text-center"> <span className="font-bold">Different industries. Same friction. Same fix.</span><br/>
                     We connect what should never have been separate in the first place.
                 </p>
             </div>
 
-            <div className="flex flex-wrap justify-center mt-8">
+            <div className="flex flex-wrap justify-center mt-8 w-200">
                 <div className="w-[200] h-[200] border-2 border-yellow-400 bg-[#f0f0f0] flex items-center justify-center m-4 flex-col">
                     <Image src="/nur.png" alt="Box 1" width={100} height={100} />
                     <p>healthcare</p>
@@ -36,8 +36,8 @@ export default function Boxes() {
                 </div>
             </div>
 
-            <div>
-                <p>The industries may differ, but the goal stays the same:
+            <div className="w-200">
+                <p className="text-center">The industries may differ, but the goal stays the same:<br/>
                     Replace fragmented technology with connected digital ecosystems.</p>
             </div>
         </div>

@@ -21,8 +21,7 @@ export default function WebDevSer() {
       <Tssystem />
       <CustomerSide />
       <Philosophy />
-      <Art title="Case Studies"/>
-      <Cursol />
+      <Cursol title="Case Studies"/>
       <Boxes />
       <Fea />
       <Ibox />
