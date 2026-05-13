@@ -9,6 +9,7 @@ import Cursol from "../webdevser/cursol"
 import Boxes from "../webdevser/boxes"
 import Footer from "../components/Footer"  
 import Strong from "./strong"
+import Fivs from "./fivs"
 
 export default function Integration() {
     return (
@@ -18,7 +19,7 @@ export default function Integration() {
             <Hori />
             <Ints />
             <Foryou />
-            <Square/>
+            <Fivs />
             <Cursol title="Industries We Transform" />
             <Boxes/>
             <Hori />

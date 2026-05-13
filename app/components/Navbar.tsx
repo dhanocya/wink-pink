@@ -1,10 +1,9 @@
-"use client"; // Next.js App Router ke liye zaroori hai
+"use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
@@ -16,9 +15,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl bg-black text-white rounded-xl flex justify-between items-center px-6 py-3 shadow-2xl border border-white/10">
-        
-        {/* Logo Area */}
+      {/* ✅ स्टिकी नैवबार – पेज के टॉप पर चिपका रहेगा, हीरो को नीचे धकेलेगा */}
+      <nav className=" z-50 w-[95%] max-w-7xl mx-auto bg-black text-white rounded-xl flex justify-between items-center px-6 py-3 shadow-2xl border border-white/10 mt-4">
+        {/* Logo */}
         <div className="flex items-center gap-3 cursor-pointer">
           <Image src="/logo.png" alt="Company Logo" width={100} height={50} className="w-auto h-8 md:h-10" />
         </div>
@@ -32,13 +31,12 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
           <button className="bg-[#EFFF00] hover:bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold text-sm transition">
             Contact Us
           </button>
         </div>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             {isOpen ? (
@@ -54,7 +52,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay (fixed – स्क्रीन पर फुल कवर) */}
       <div className={`fixed inset-0 z-40 bg-black/95 transition-transform duration-300 md:hidden flex flex-col items-center justify-center gap-8 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
         <ul className="text-center space-y-6 text-xl font-medium text-gray-300">
           {navLinks.map((link) => (
