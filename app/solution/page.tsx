@@ -6,6 +6,7 @@ import Cursol from "../webdevser/cursol"
 import Boxes from "../webdevser/boxes"
 import Footer from "../components/Footer"
 import Strong from "../integration/strong"
+import Impact from "./impact";
 
 export default function Solution() {
     return (
@@ -57,9 +58,9 @@ export default function Solution() {
             <Cursol title="Industries We Transform" />
             <Boxes />
             <Hori />
+            <Impact />
             <Strong />
             <Footer />
-
         </>
     )
 }
