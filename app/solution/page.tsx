@@ -5,8 +5,9 @@ import Hori from "../components/Hori"
 import Cursol from "../webdevser/cursol"
 import Boxes from "../webdevser/boxes"
 import Footer from "../components/Footer"
-import Strong from "../integration/strong"
 import Impact from "./impact";
+import Bocard from "../components/bocard";
+import Bacard from "../components/bacard";
 
 export default function Solution() {
     return (
@@ -56,10 +57,9 @@ export default function Solution() {
             <Einfo />
             <Square />
             <Cursol title="Industries We Transform" />
-            <Boxes />
+            <Bacard /> 
             <Hori />
             <Impact />
-            <Strong />
             <Footer />
         </>
     )
